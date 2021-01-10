@@ -1,0 +1,73 @@
+/*
+Layout. @Keyframes para fundo gradiente, animação.
+*/
+@keyframes bganimation {
+	0% {
+		background-position:0% 50%;
+	}
+	50% {
+		background-position:100% 50%;
+	}
+	100% {
+		background-position: 50% 0%;
+	}
+}
+/*tipo de fonte e fundo linear*/
+body  {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-image: linear-gradient(125deg, #2c3e50, #27ae60, #2980b9, #e74c3c, #8e44ad);
+	background-size:400% 400%;
+	animation:bganimation 15s infinite;
+}
+/*Tudo o que tiver dentro dos botões */
+input, button {
+	width:80%;
+	height: 40px;
+	font-size:18px;
+	margin-bottom:10px;
+	background-color:white;
+	padding-left:40px;
+	border: none;
+	background-repeat: no-repeat;
+	background-position:10px;
+	border-radius:10px;
+}
+/*Para inserir imagem no css*/
+input[type="email"] {
+	background-image: url(../images/icone-usuario.png);
+}
+
+input[type="password"] {
+	background-image:url(../images/icone-cadeado.png);
+}
+/*propriedades do botão enviar*/
+button {
+	color:white;
+	background-color:#2c3e50;
+	padding:5px 20px;
+	width:90%;
+}
+/*opacidade e tipo do cursor*/
+button:hover {
+	opacity:0.8;
+	cursor:pointer;
+}
+
+/*Caixa transparente: container; */
+#container {
+	width:500px;
+	height:400px;
+	background: rgba(255,255,255,0.5);
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	margin:120px auto;
+	text-align:center;
+	padding: 10px;
+}
+/*Editando a imagem*/
+#container img {
+	width:120px;
+	height:120px;
+	margin-top:-60px;
+	margin-bottom: 30px;
+}
